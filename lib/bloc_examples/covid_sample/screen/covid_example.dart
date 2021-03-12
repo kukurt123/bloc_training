@@ -1,4 +1,6 @@
 import 'package:bloc_training/bloc_examples/covid_sample/bloc/covid_bloc_barrel.dart';
+import 'package:bloc_training/bloc_examples/covid_sample/dto/covid_dto.dart';
+import 'package:bloc_training/bloc_examples/covid_sample/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -182,7 +184,8 @@ class _CountriesDataView extends StatelessWidget {
                           getFormattedNumber(country.totalConfirmed),
                           style: TextStyle(
                             fontSize: 18.0,
-                            color: Colors.black,
+                            color: Colors.black
+                            ,
                           ),
                         ),
                       ],
